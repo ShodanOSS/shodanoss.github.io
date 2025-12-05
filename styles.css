@@ -103,7 +103,7 @@
     grid-area: cta;
 }
 :root:has(#ThemeToggle:checked) {
-  --sixty: #cebf9b;
+  --sixty: #9e8f6c;
   --thirty: #000000;
   --ten:   #634200;
 }
@@ -530,7 +530,7 @@ html {
 @media (min-width: 768px) and (max-width: 1023.99px){ 
 
     .Theme-Light {
-    --sixty: #cebf9bfe;
+    --sixty: #9e8f6c;
     --thirty: #000000;
     --ten:   #634200;
   }
@@ -645,3 +645,4 @@ html {
     }
 
 }
+

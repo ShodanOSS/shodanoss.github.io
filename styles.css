@@ -1,3 +1,64 @@
+ /* root variables */
+:root {
+    /* base colour scheme */
+    --sixty: #080f08;   /* backgrounds and dark modifyer for gradients */
+    --thirty: #71f071;    /* text color */
+    --ten: #005624;       /* accent color */
+    
+    /* base colour modifiers */
+    --sixty-darker: color-mix(in srgb, var(--sixty), #080f08 30%);
+    --thirty-darker: color-mix(in srgb, var(--thirty), #080f08 30%);
+    --thirty-darkest: color-mix(in srgb, var(--thirty-darker), #080f08 30%);
+    --ten-darker: color-mix(in srgb, var(--ten), #080f08 30%);
+
+    /* background gradients */
+    --background-gradient-primary: linear-gradient(to left, var(--sixty), var(--sixty-darker));
+    --background-headline: linear-gradient(to bottom, var(--thirty) 0%, var(--thirty-darker) 20%, var(--thirty-darker) 58%, var(--sixty) 70%, var(--sixty) 75%, var(--thirty-darkest) 80%, var(--thirty-darker) 100%);
+    --background-header-nav: radial-gradient(ellipse 100% 60%, var(--thirty-darkest), var(--sixty));
+    --background-header-nav-list: radial-gradient(circle, var(--sixty), var(--ten));
+    --background-hero: radial-gradient(circle, var(--sixty), var(--sixty), var(--sixty), var(--sixty), var(--thirty-darker));
+    --background-hero-title: radial-gradient(circle, var(--ten), var(--ten), var(--sixty), var(--sixty), var(--thirty-darkest));
+    --background-hero-body: radial-gradient(circle, var(--sixty), var(--sixty), var(--ten), var(--thirty-darkest));
+
+    --background-mission-vision: radial-gradient(circle, var(--sixty), var(--sixty), var(--sixty), var(--sixty), var(--thirty));
+    --background-mission-vision-title: radial-gradient(circle, var(--ten), var(--ten), var(--sixty), var(--sixty), var(--sixty), var(--ten));
+    --background-mission-vision-body: radial-gradient(circle, var(--sixty), var(--sixty), var(--ten));
+
+    --background-skills:  radial-gradient(circle, var(--sixty), var(--sixty), var(--sixty), var(--sixty), var(--thirty));
+    --background-skills-title: radial-gradient(circle, var(--ten), var(--ten), var(--sixty), var(--sixty), var(--sixty), var(--ten));
+    --background-skills-body: radial-gradient(circle, var(--sixty), var(--sixty), var(--ten));
+
+    --background-projects: radial-gradient(circle, var(--sixty), var(--sixty), var(--sixty), var(--sixty), var(--thirty));
+    --background-projects-title: radial-gradient(circle, var(--ten), var(--ten), var(--sixty), var(--sixty), var(--sixty), var(--ten));
+    --background-projects-body: radial-gradient(circle, var(--sixty), var(--sixty), var(--ten));
+
+    --background-contact: radial-gradient(circle, var(--sixty), var(--sixty), var(--sixty), var(--sixty), var(--thirty));
+    --background-contact-title: radial-gradient(circle, var(--ten), var(--ten), var(--sixty), var(--sixty), var(--sixty), var(--ten));
+    --background-contact-body: radial-gradient(circle, var(--sixty), var(--sixty), var(--sixty), var(--sixty), var(--ten));
+
+    --background-resume: radial-gradient(circle, var(--sixty), var(--sixty), var(--sixty), var(--sixty), var(--thirty));
+    --background-resume-title: radial-gradient(circle, var(--ten), var(--ten), var(--sixty), var(--sixty), var(--sixty), var(--ten));
+    --background-resume-body: radial-gradient(circle, var(--sixty), var(--sixty), var(--ten));
+
+    /* fonts */
+    --font-family-sans: system-ui, "-apple-system", "Segoe UI", "Roboto", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
+    --font-family-mono: "Consolas", "Courier New", ui-monospace, "SFMono-Regular", "Menlo", "Monaco", monospace;
+    --font-family-serif: "EB Garamond", Georgia, serif;
+    --font-family-CTA: "Press Start 2P", system-ui, sans-serif;
+
+    /* font sizes */
+    --font-size-body: 1rem;
+    --font-size-title: 2rem;
+    --font-size-nav: 1.5rem;
+    --font-size-CTA: 1.8rem;
+    --font-size-button: 3rem;
+
+    /* link state colours */
+    --link: var(--thirty);
+    --link-visited: var(--thirty-darker);
+    --link-hover-background: var(--sixty-darker);
+    --link-hover-font: var(--thirty);
+
     /* entity containers */
     --headline-height: 10vw;
 
@@ -599,5 +660,6 @@ html {
     }
 
 }
+
 
 
